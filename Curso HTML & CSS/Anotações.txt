@@ -1,0 +1,168 @@
+Links Úteis
+https://github.com/gustavoguanabara
+https://gustavoguanabara.github.io
+
+M01C01
+
+1 - História da Internet
+
+1.1 - Origem da Internet
+- Surgiu na Guerra Fria (Embate não armado entre EUA e URSS em 1949)
+- 1969 Surge a DARPA fundada pelo presidente americano da epoca Dwight Eisenhower preocupado com o desenvolvimento tecnologico da URSS
+- Ainda em 1969 surge a ARPANET desenvolvida pela DARPA com objetivo de transmissões de informações entre bases militares
+- Devido as linguagens diferentes usadas pelos diferentes computadores surge o NCP, um protocolo de linguagem unica para comunicação entre as maquinas
+- Devido a limitações do NCP de parar a rede para comunicação entre dois pontos surgem dois novos protocolos o TCP criado por Bob kahn e o protocolo IP criado por Vint Cerf e com a união dos dois surge o protocolo TCP/IP
+- Devido o crescimento da ARPANET ao longo dos anos a mesma foi dividida em 3 partes, A MILNET onde ficava as informações militares, A NSFNET uma rede academica e as redes comerciais.
+- Essas Redes ainda precisavam se comunicar devido a isso surgiu a Interconnect Networking que de forma abreviada ficava Internetworking que futuramente veio a ser abreviada para apenas Internet
+
+1.2 Como Funciona o TCP/IP
+- O protocolo localiza os ips na rede, fragmenta o arquivo desejado em pacotes e faz o envio atravez da rede por diversas redes
+- Existe o protocolo nas duas pontas, no servidor o protocolo fraqmenta o pacote e o mesmo é responsavel por remontar ele
+
+1.3 Como era a internet antigamente?
+- Inicialmente era interface de prompt, uma tela preta com letras branca que utilizava o teclado para navegar, e utilizava o protocolo gopher
+- Em 1993 em Gernebra um Inglês chamado Tim Berners Lee cria o protocolo http:// que futuramente seria Adicionado ao protocolo TCP/IP o mesmo criou a Linguagem HTML
+- Com a junção dessas criações surgiu a World Wide Web ou WWW que utilaza a linguagem HTML para gerar sites vizualmentes melhores e com capacidade de possuir imagens, videos e muito mais
+
+1.4 O que é World Wide Web (WWW)
+- A World Wide Web é um dos sub rede da internet que engloba os servidores especializados em HTTP
+
+1.5 Internet no Brasil
+- Surgiu em 1989 apos o lançamento do projeto RNP (Rede Nacional de Ensino e Pesquisa) pelo Ministério de Ciência e Tecnologia 
+- Quando lançada tinha como objetivo realizar a operação de uma rede acadêmica de alcance nacional, tinha como objetivo tambem, capacitar recursos humanos de alta tecnologia e difundir a tecnologia internet no país
+- Em 1991 foi inaugurado o primeiro backbone brasileiro, destinado exclusivamente à comunidade academica
+- Quatro anos depois, em 1995 o governo resolveu abrir o backbone e fornecer conectividade a provedores de acesso comerciais
+- Apartir dai surgiu a descussão sobre o papel da RNP como uma rede estritamente acadêmica, mas com o crecimento da Internet comercial a RNP voltou novamente a atenção para a comunidade cientifica
+- Em 1997 com o aumento de acessos a rede e necessidade de uma infraestrutura mais veloz e segura levou a o investimento em novas tecnologias, mas devido as carências de uma infra de fibra óptica que cobrisse o territorio nacional iniciosse a criação de redes locais com alta velocidade aproveitando a infra das cidades metropolitanas
+- Em 2000 apos os investimentos para aprimoramento das redes foi implantado o backbone RNP2, com o objetivo de interligar todo o pais em uma rede de alta tecnologia, atualmente essa rede conecta todos os 27 estados do pais e mais de 300 instituições de ensino superior e de pesquisas
+- Apartir de 2005 a comunicação entre os Pops da rede começou a ser apliada com o uso da tecnologia óptica, o que elevou a capacidade de operação da rede, causando um crescimento exponencial no numero de computadores no pais
+
+
+M01C02
+
+2 - Como a Internet Funciona?
+
+2.1 - Como a gente se conecta a internet?
+- Por meio de um Cliente ( A maquina da qual você esta utilizando para acessar os serviços na internet) nos conectamos a rede de Internet (Onde esta hospedado os serviços que sera acessado)
+- O acesso é feito atravez de aparelhos geralmente conectado ao sistema de Telefone ou cabeamento de televisão
+- O Cliente entende sinais de Onda Quadrada (Representação eletrica dos bits) e os sistemas de internet geralmente entende Ondas Senoidais
+- O aparelho de conecção, o Modem, é responsavel pela modulação das Ondas Quadradas e remodulação das ondas seneodais
+
+2.2 - Como Acessamos o Servidores?
+- Nossa maquina Cliente acessa o Servidor conectado atravez da internet, essa maquina identificada por um indereço de IP
+- Devido o IP alterar constantemente é necessario uma forma de localizar o servidor na Rede para isso usamos os servidores DNS, uma especie de agenda eletronica para dominios de internet
+- Para acessar ao Servidor o Cliente primeiro solicita atravez da pesquisa do Dominio o endereço de IP atual do Servidor nos servidores DNS e o mesmo retorna o endereço de IP, após adquirir essa informação o cliente consegue localizar na rede do Servidor e solicitar seus serviços, exemplo:
+	- O Cliente atravez do seu navegador solicita o dominio "www.google.com", essa informação é enviada para os Servidores DNS e retorna para ele o indereço de IP do Servidor Google "142.251.46.238", com essa informação o Cliente consegue localizar na rede o servidor do serviço assim conseguindo acessar ao Google
+- Os serviços são enviados atravez das rotas da rede, nem sempre utilizando a rota mais rapida e muitas vezes nem utilizando a mesma rota para enviar todos os pacotes
+
+2.3 Como os outros vão ver meu site?
+- Se o Serviço estiver guardado no servidor o Cliente ira consultar o dominio no servidor DNS e com a informação do IP coletada no mesmo acessarar o Servidor e solicitarar os pacotes de informações, dessa forma qualquer Cliente consegue coletar a informação
+- Se o Serviço estiver guardado no seu computador Cliente nenhum outro Cliente conseguirar acessar os Serviços já que a informação não esta em um Servidor e não é possivel acessar pela rede
+- Se o Serviço estiver em outro Cliente computador Cliente igualmente não sera possivel conectar
+- Para outros se conectar no meu site é necessario que o Serviço esteja armazenado em um Servidor e possuir uma URL
+- Para acessar ao site é necessario inicialmente um Dominio, um nome unico para o seu site, geralmente pago anualmente
+- Apos isso é necessario uma Hospedagem, um espaço para o armazenamento dos seu Serviços, geralmente pago mensalmente diferenciado pelos seus recursos 
+
+2.4 - O que é um Dominio?
+- É um endereço unico, URL, divididos em partes
+- O dominio é dividido da seguinte forma, utilizando o dominio "www.github.com/mateusbrito" como exemplo:
+	- "www.github.com/mateusbrito" sendo o URL um indereço unico de indentificação que auxilia a localização do Servidor na rede
+	- "github.com" o Domínio, sendo esse o que é contratado para poder ser utilizado
+	- ".com" sendo o TLD ou Top Level Domain estes sendo separados em GTLD(dominios genericos [.com / .net / .gov / ...]) e CCGLP (codigos para paises [.br / .us / .uk / ...])
+	- "www" sendo o sub-domínio, sendo esse o dominio principal do servidor web
+	- "/mateusbrito" sendo o caminho
+
+M01C03
+
+3 - A diferença entre HTML, CSS e JS
+
+3.1 - Como funciona a HTML e as CSS
+- HTML e as CSS não são linguagens de programação
+- HTML: HyperText Markup Language (Linguagem de Marcação de hipertexto)
+- CSS : Cascading Style Sheet (Folhas de Estilo em Cascata)
+- HTML é focado no conteúdo do site (Textos, imagens, vídeos, tabelas...), as CSS são responsaveis pelo design (Cores, sombras, tamanhos, posicionamento...), JS é responsavel pelas interações(menus, animações, popups, validações...)
+
+3.2 Conteúdo em HTML
+- Como o HTML é uma linguagem de marcação ela utiliza tags especificas para cada coisa, geralmente tendo o conteúdo entre a abertura da tag e o fechamento, exemplo:
+- <h1>Exemplo de título</h1>
+	- <h1> : abertura de tag
+	- Exemplo de título : Conteúdo
+	- </h1> : fechamento de tag
+- Nem sempre as tags tera fechamento, exemplo:
+- <img src="foto.png" alt="Exemplo de foto">
+	- <img ... > = abertura de tag
+	- src= / alt= = parâmetro
+	- "foto.png" / "Exemplo de foto" = valor
+
+3.3 Conteúdo em CSS
+- Geralmente dentro de uma Tag Style do HTML e utiliza seletores, exemplo?
+- h1 {
+	font-family: Arial;
+	font-size: 20pt;
+	color: blue;
+     }
+	Sendo: 
+	- h1{ ... } = seletor
+	- font-family : Arial; = declaração
+	- font-family = propriedade
+	- Arial = valor
+
+3.4 Estrutura basica do HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viweport" content="width=device-width,initial-scalee=1.0"
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Olá, Mundo!</h1>
+	</body>
+</html>
+
+3.5 A diferença entre Back-End, Front-End e Fullstack
+- Front-End são os recursos que rodam no lado do cliente, o chamado Client-Side, o desenvolvedor front-end é especializado em tecnologia como HTML, CSS e JS
+- Back-End são os recursos que rodam no lado do servidor, o Server-Side, o desenvolvedor back-end é especializado em tecnologia como PHP, JS, C# 
+- Full Stack é a soma do conhecimento das duas formas de desenvolvimento, é a soma dos conhecimentos em tecnologias Client-Side e Server-Side
+
+M01C04
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
