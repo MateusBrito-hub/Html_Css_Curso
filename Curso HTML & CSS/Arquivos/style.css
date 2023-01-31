@@ -19,7 +19,7 @@ div#header h1{
     font-size: 300%;
     font-weight: bold;
     margin: 0;
-    padding-top: 5vh;
+    padding-top: auto;
 }
 ul {
     margin: 0;
@@ -29,7 +29,7 @@ ul {
 }
 li a {
     display: inline;
-    font-size: 30px;
+    font-size: 25px;
     float: left;
     color: #000;
     text-decoration: none;
